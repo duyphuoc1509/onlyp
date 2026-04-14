@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV — Nguyen Duy Phuoc | Senior .NET Backend Engineer</title>
+
+    <meta
+      name="description"
+      content="Nguyen Duy Phuoc — Senior Backend Engineer (.NET 8). APIs, microservices, Kafka, AWS, SaaS and enterprise integration. Ho Chi Minh City, Vietnam."
+    />
+    <meta
+      name="keywords"
+      content="Nguyen Duy Phuoc, Senior Backend Engineer, .NET 8, ASP.NET Core, Microservices, Kafka, AWS, SaaS, Redis, SQL Server, Solution Architecture"
+    />
+    <meta name="author" content="Nguyen Duy Phuoc" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="CV — Nguyen Duy Phuoc | Senior Backend Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Senior .NET 8 backend engineer — scalable APIs, microservices, Kafka, AWS, enterprise SaaS. Growing in solution architecture."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://duyphuoc1509.github.io/onlyp/" />
+    <meta property="og:site_name" content="Nguyen Duy Phuoc — CV" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="CV — Nguyen Duy Phuoc | Senior Backend Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior .NET 8 backend — APIs, microservices, Kafka, AWS, SaaS."
+    />
+
+    <meta name="profession" content="Senior Backend Engineer" />
+    <meta name="experience" content="6+ years" />
+    <meta name="location" content="Ho Chi Minh City, Vietnam" />
+    <meta name="email" content="duyphuoc1509@gmail.com" />
+    <meta name="linkedin" content="https://www.linkedin.com/in/onlyp/" />
+
+    <!-- After GitHub Pages deploy, replace with your live URL -->
+    <link rel="canonical" href="https://duyphuoc1509.github.io/onlyp/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%231e3a5f' width='32' height='32' rx='4'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='white' font-family='system-ui' font-size='14' font-weight='700'%3ENP%3C/text%3E%3C/svg%3E"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --ink: #0f172a;
+        --accent: #1e3a5f;
+        --muted: #475569;
+        --rule: #cbd5e1;
+        --tag-bg: #f1f5f9;
+      }
+
+      body {
+        font-family:
+          "Source Sans 3",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+        color: var(--ink);
+        background-color: #e2e8f0;
+        font-size: 13px;
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm 12mm 17mm 12mm;
+      }
+
+      .container {
+        max-width: 210mm;
+        margin: 0 auto;
+        background: white;
+        padding: 15mm;
+        min-height: 297mm;
+        overflow: visible;
+        box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+      }
+
+      /* Header Section */
+      .header {
+        text-align: center;
+        margin-bottom: 25px;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 20px;
+      }
+
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        letter-spacing: 0.5px;
+      }
+
+      .title {
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: none;
+        margin-bottom: 6px;
+        letter-spacing: 0.02em;
+        color: var(--muted);
+      }
+
+      .tagline-sub {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 12px;
+        font-weight: 400;
+      }
+
+      .contact-info {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .contact-line {
+        margin-bottom: 5px;
+      }
+
+      /* Link Styles */
+      a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #0f172a;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: var(--accent);
+      }
+
+      /* Section Headers */
+      .section-header {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 6px;
+        margin: 22px 0 14px 0;
+        text-decoration: none;
+      }
+
+      /* Work Experience */
+      .work-item {
+        margin-bottom: 18px;
+      }
+
+      .company-header {
+        font-weight: bold;
+        margin-bottom: 3px;
+        font-size: 13px;
+      }
+
+      .company-name {
+        font-weight: bold;
+      }
+
+      .dates {
+        font-weight: normal;
+      }
+
+      .role {
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+
+      .subsection {
+        margin-bottom: 10px;
+      }
+
+      .subsection-title {
+        font-weight: bold;
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+
+      .bullet-list {
+        margin-left: 15px;
+      }
+
+      .bullet-list li {
+        margin-bottom: 4px;
+        list-style-type: disc;
+        font-size: 12px;
+      }
+
+      .tech-list {
+        margin-left: 0;
+        font-size: 12px;
+      }
+
+      .tech-list li {
+        display: inline;
+        list-style: none;
+      }
+
+      .tech-list li:not(:last-child)::after {
+        content: ", ";
+      }
+
+      /* Project Section */
+      .project-item {
+        margin-bottom: 15px;
+        padding-left: 8px;
+      }
+
+      .project-header {
+        font-weight: bold;
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+
+      .project-details {
+        margin-left: 10px;
+      }
+
+      .project-detail {
+        margin-bottom: 3px;
+        font-size: 12px;
+      }
+
+      .project-detail-label {
+        font-weight: bold;
+      }
+
+      .project-description {
+        margin-left: 10px;
+      }
+
+      .project-description ul {
+        margin-left: 15px;
+      }
+
+      .project-description li {
+        margin-bottom: 2px;
+        list-style-type: disc;
+        font-size: 12px;
+      }
+
+      /* Summary Section */
+      .summary-list {
+        margin-left: 15px;
+      }
+
+      .summary-list li {
+        margin-bottom: 5px;
+        list-style-type: disc;
+        font-size: 12px;
+      }
+
+      /* Skills Section */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+      }
+
+      .skill-category {
+        margin-bottom: 12px;
+      }
+
+      .skill-category-title {
+        font-weight: bold;
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .skill-tag {
+        background: var(--tag-bg);
+        padding: 3px 9px;
+        border-radius: 4px;
+        font-size: 11px;
+        border: 1px solid var(--rule);
+        color: var(--ink);
+      }
+
+      .work-meta {
+        font-size: 11px;
+        color: var(--muted);
+        font-weight: 400;
+        margin-bottom: 6px;
+      }
+
+      /* Education Section */
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .education-header {
+        font-weight: bold;
+        margin-bottom: 3px;
+        font-size: 12px;
+      }
+
+      .education-details {
+        font-size: 12px;
+      }
+
+      /* Certifications */
+      .cert-item {
+        margin-bottom: 6px;
+      }
+
+      .cert-name {
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      .cert-issuer {
+        font-size: 11px;
+        color: #333;
+      }
+
+      .cert-date {
+        font-size: 11px;
+        color: #666;
+      }
+
+      /* Languages */
+      .language-item {
+        margin-bottom: 6px;
+      }
+
+      .language-name {
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      .language-level {
+        font-size: 12px;
+      }
+
+      /* Buttons */
+      .button-group {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        gap: 10px;
+      }
+
+      .print-button,
+      .pdf-button {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.3s ease;
+      }
+
+      .pdf-button {
+        background: #e74c3c;
+      }
+
+      .print-button:hover {
+        background: #555;
+      }
+
+      .pdf-button:hover {
+        background: #c0392b;
+      }
+
+      .loading {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 2000;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        min-width: 200px;
+      }
+
+      .spinner {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #ffffff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 15px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media print {
+        .print-button,
+        .pdf-button,
+        .button-group,
+        .loading {
+          display: none !important;
+        }
+
+        body {
+          background: white !important;
+          font-size: 12px !important;
+          line-height: 1.4 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          color-adjust: exact !important;
+        }
+
+        .container {
+          box-shadow: none !important;
+          margin: 0 !important;
+          padding: 12mm 12mm 17mm 12mm !important;
+          max-width: none !important;
+          width: 100% !important;
+          min-height: auto !important;
+          height: auto !important;
+          overflow: visible !important;
+        }
+
+        .section-header {
+          page-break-after: avoid;
+          margin-top: 15px !important;
+          break-after: avoid;
+        }
+
+        .work-item {
+          page-break-inside: auto;
+          break-inside: auto;
+          margin-bottom: 12px !important;
+        }
+
+        .project-item {
+          page-break-inside: auto;
+          break-inside: auto;
+          margin-bottom: 10px !important;
+        }
+
+        .subsection {
+          page-break-inside: auto;
+          break-inside: auto;
+        }
+
+        .skills-grid {
+          display: block !important;
+        }
+
+        .skill-category {
+          margin-bottom: 8px !important;
+          page-break-inside: auto;
+          break-inside: auto;
+        }
+
+        .skill-tags {
+          display: block !important;
+        }
+
+        .skill-tag {
+          display: inline-block !important;
+          margin: 1px 3px 1px 0 !important;
+        }
+
+        .tech-list li {
+          display: inline !important;
+        }
+
+        .tech-list li:not(:last-child)::after {
+          content: ", " !important;
+        }
+
+        /* Link styles for print - remove clickable links */
+        a {
+          color: #000 !important;
+          text-decoration: none !important;
+          pointer-events: none !important;
+        }
+
+        a[href]:after {
+          content: "" !important;
+        }
+
+        a[href^="mailto:"]:after {
+          content: "" !important;
+        }
+
+        /* Section headers underline spacing for print */
+        .section-header {
+          text-underline-offset: 2px !important;
+          text-decoration-thickness: 1px !important;
+        }
+
+        /* Đảm bảo nội dung dài được chia trang */
+        .bullet-list {
+          page-break-inside: auto;
+          break-inside: auto;
+        }
+
+        .bullet-list li {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .footnote {
+          color: #333 !important;
+        }
+
+        /* Tránh cắt text khi chuyển trang */
+        .work-item {
+          page-break-inside: avoid;
+          break-inside: avoid;
+          margin-bottom: 15px !important;
+        }
+
+        .project-item {
+          page-break-inside: avoid;
+          break-inside: avoid;
+          margin-bottom: 12px !important;
+        }
+
+        .subsection {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .skill-category {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .education-item {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .language-item {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* Tránh cắt text giữa dòng */
+        .project-detail {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .project-details {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .project-description {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .tech-list {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .company-header {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .role {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* Đảm bảo section headers không bị cắt */
+        .section-header {
+          page-break-after: avoid;
+          break-after: avoid;
+          margin-top: 20px !important;
+          margin-bottom: 10px !important;
+        }
+
+        /* Tránh cắt project headers */
+        .project-header {
+          page-break-after: avoid;
+          break-after: avoid;
+        }
+
+        /* Tránh cắt text trong các dòng dài */
+        p,
+        div,
+        span {
+          orphans: 3;
+          widows: 3;
+        }
+
+        /* Đảm bảo không cắt giữa từ */
+        * {
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          hyphens: auto;
+        }
+
+        /* Tránh cắt text mạnh hơn */
+        .project-detail,
+        .project-details,
+        .project-description,
+        .tech-list,
+        .company-header,
+        .role,
+        .subsection-title,
+        .education-header,
+        .language-name,
+        .language-level {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          orphans: 3 !important;
+          widows: 3 !important;
+        }
+
+        /* Tránh cắt các dòng text */
+        .project-detail span,
+        .project-details span,
+        .project-description span {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+
+        /* Đảm bảo không cắt giữa project item */
+        .project-item .project-details {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+
+        /* Tránh cắt tech stack */
+        .tech-list li {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+
+        /* Tránh cắt text mạnh nhất - áp dụng cho tất cả */
+        * {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+
+        /* Cho phép cắt một số elements cần thiết */
+        .container,
+        .work-item,
+        .project-item,
+        .subsection,
+        .skill-category,
+        .education-item,
+        .language-item {
+          page-break-inside: auto !important;
+          break-inside: auto !important;
+        }
+
+        /* Nhưng vẫn bảo vệ text bên trong */
+        .container *,
+        .work-item *,
+        .project-item *,
+        .subsection *,
+        .skill-category *,
+        .education-item *,
+        .language-item * {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+
+        /* Đặc biệt bảo vệ các dòng text */
+        .project-detail,
+        .project-details,
+        .project-description,
+        .tech-list,
+        .company-header,
+        .role,
+        .subsection-title,
+        .education-header,
+        .language-name,
+        .language-level,
+        .project-detail-label,
+        .project-detail span {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          orphans: 4 !important;
+          widows: 4 !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 10px;
+          padding: 20px;
+        }
+
+        .button-group {
+          position: relative;
+          top: auto;
+          right: auto;
+          margin-bottom: 20px;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-group">
+      <button type="button" class="pdf-button" onclick="exportToPDF()">
+        Export PDF
+      </button>
+      <button type="button" class="print-button" onclick="window.print()">
+        Print
+      </button>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <div>Generating PDF…</div>
+    </div>
+
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="name">Nguyen Duy Phuoc</div>
+        <div class="title">Senior Backend Engineer | Solution Architecture</div>
+
+        <div class="contact-info">
+          <div class="contact-line">
+            <a href="mailto:duyphuoc1509@gmail.com">duyphuoc1509@gmail.com</a> ·
+            Ho Chi Minh City, Vietnam
+          </div>
+          <div class="contact-line">
+            <a
+              href="https://www.linkedin.com/in/onlyp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.linkedin.com/in/onlyp/</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section>
+        <div class="section-header">Summary</div>
+        <ul class="summary-list">
+          <li>
+            <strong>8+ years in backend and platform engineering</strong> for
+            enterprise SaaS, with consistent delivery in high-demand production
+            environments.
+          </li>
+          <li>
+            <strong>Architecture-first mindset:</strong> design service
+            boundaries, multi-tenant SaaS foundations, and integration
+            strategies for long-term scalability.
+          </li>
+          <li>
+            <strong>Core technical depth:</strong> .NET 8, microservices,
+            event-driven systems (Kafka/RabbitMQ), distributed caching, and AWS
+            cloud platforms.
+          </li>
+          <li>
+            <strong>Leadership in execution:</strong> align engineering with
+            product goals, drive technical decisions, and raise delivery quality
+            across cross-functional teams.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technical Skills -->
+      <section style="margin-top: -8px">
+        <div class="section-header">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-title">Languages &amp; runtime</div>
+            <div class="skill-tags">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">.NET 8 / ASP.NET Core</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Architecture &amp; practices</div>
+            <div class="skill-tags">
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">Distributed systems</span>
+              <span class="skill-tag">Clean architecture</span>
+              <span class="skill-tag">SOLID</span>
+              <span class="skill-tag">Design patterns</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Messaging</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Kafka</span>
+              <span class="skill-tag">RabbitMQ</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Data &amp; caching</div>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Cloud &amp; platform</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Amazon Web Services (AWS)</span>
+              <span class="skill-tag">Solution architecture</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Leadership</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Technical leadership</span>
+              <span class="skill-tag">Code review &amp; mentoring</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section>
+        <div class="section-header">Work Experience</div>
+
+        <div class="work-item">
+          <div class="company-header">
+            <span class="company-name">MYMIND Technology</span> |
+            <span class="dates">Mar 2025 – Present · 1 yr 2 mos</span>
+          </div>
+          <div class="role">
+            Software Engineer
+            <span class="work-meta"
+              >(Full-time · Hybrid, Ho Chi Minh City)</span
+            >
+          </div>
+          <div class="subsection">
+            <ul class="bullet-list">
+              <li>
+                Lead core backend engineering for enterprise SaaS, with strong
+                ownership of system architecture, service boundaries, and
+                long-term platform stability.
+              </li>
+              <li>
+                Drive architecture decisions with product and business
+                stakeholders, balancing delivery speed with maintainability,
+                reliability, and future scalability.
+              </li>
+              <li>
+                Design and evolve multi-tenant SaaS system foundations to keep
+                tenant isolation, scalability, and operational consistency as
+                the product grows.
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="subsection-title">Technologies:</div>
+            <ul class="tech-list">
+              <li>.NET 8 backend architecture</li>
+              <li>Distributed service design</li>
+              <li>SaaS multi-tenant design system</li>
+              <li>AWS cloud platforms</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="company-header">
+            <span class="company-name">NandH Logistics</span> |
+            <span class="dates">Jul 2023 – Feb 2025 · 1 yr 8 mos</span>
+          </div>
+          <div class="role">
+            Technical Lead
+            <span class="work-meta">(Full-time · On-site, Tan Binh, HCMC)</span>
+          </div>
+          <div class="subsection">
+            <ul class="bullet-list">
+              <li>
+                Acted as Technical Lead for a cross-functional product squad,
+                driving sprint planning, sprint execution, and delivery
+                alignment across engineering, QA, PO.
+              </li>
+              <li>
+                Owned Jira workflow discipline: backlog refinement, story
+                decomposition, prioritization, acceptance criteria alignment,
+                and sprint tracking to keep team commitments predictable.
+              </li>
+              <li>
+                Worked closely with product in end-to-end product process
+                (discovery to release), translating business needs into
+                actionable technical plans and release-ready increments.
+              </li>
+              <li>
+                Mentored engineers through design and code review, improved team
+                collaboration standards, and kept delivery quality stable under
+                operational deadlines.
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="subsection-title">Technologies:</div>
+            <ul class="tech-list">
+              <li>.NET</li>
+              <li>Technical leadership</li>
+              <li>Jira</li>
+              <li>Sprint planning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="company-header">
+            <span class="company-name"
+              >Mobile World Investment Corporation (The Gioi Di Dong)</span
+            >
+            | <span class="dates">Aug 2021 – Jul 2023 · 2 yrs</span>
+          </div>
+          <div class="role">
+            Senior Back End Developer
+            <span class="work-meta"
+              >(Full-time · On-site, Ho Chi Minh City)</span
+            >
+          </div>
+          <div class="subsection">
+            <ul class="bullet-list">
+              <li>
+                Implemented microservices architecture for high-traffic
+                e-commerce systems.
+              </li>
+              <li>
+                Developed and upgraded services for warehouse management, news
+                content management, order management, and promotions.
+              </li>
+              <li>
+                Designed and built the core architecture for the e-commerce
+                project.
+              </li>
+              <li>
+                Researched and applied new technologies to improve scalability
+                and system performance.
+              </li>
+              <li>
+                Deployed services across development, staging, and production
+                environments.
+              </li>
+              <li>
+                Supported event-driven data flows with Kafka and CDC patterns,
+                while maintaining cache consistency with Redis in core business
+                services.
+              </li>
+              <li>
+                Contributed to team workshops, resolved critical issues, and
+                supported teammates with technical challenges.
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="subsection-title">Technologies:</div>
+            <ul class="tech-list">
+              <li>.NET Core</li>
+              <li>Microservices</li>
+              <li>RESTFull APIs</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>Kafka</li>
+              <li>CDC</li>
+              <li>ELK</li>
+              <li>Trace logging</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="company-header">
+            <span class="company-name">FinFan</span> |
+            <span class="dates">Jan 2020 – Apr 2021 · 1 yr 4 mos</span>
+          </div>
+          <div class="role">
+            Back End Developer
+            <span class="work-meta"
+              >(Full-time · On-site, District 1, HCMC)</span
+            >
+          </div>
+          <div class="subsection">
+            <ul class="bullet-list">
+              <li>
+                Integrated APIs with domestic and international partners (e.g.,
+                Momo, VNPAY, Ripple) for payment and remittance workflows.
+              </li>
+              <li>
+                Tested and monitored the in-house remittance system to ensure
+                stability, reliability, and service quality.
+              </li>
+              <li>
+                Analyzed business requirements and selected appropriate
+                technology solutions aligned with product goals.
+              </li>
+              <li>
+                Deployed and maintained systems on IIS servers, including
+                upgrades, troubleshooting, and customer support.
+              </li>
+              <li>
+                Built a news management website to support the Marketing team's
+                content operations and SEO strategy.
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="subsection-title">Technologies:</div>
+            <ul class="tech-list">
+              <li>ASP.NET</li>
+              <li>SQL Server</li>
+              <li>IIS</li>
+              <li>API integration</li>
+              <li>SEO CMS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="company-header">
+            <span class="company-name">GME</span> |
+            <span class="dates">Jun 2017 – Dec 2019 · 2 yrs 7 mos</span>
+          </div>
+          <div class="role">
+            Intern → Software Developer
+            <span class="work-meta">(Hospital Software)</span>
+          </div>
+          <div class="subsection">
+            <ul class="bullet-list">
+              <li>
+                Developed and optimized SQL queries for HIS hospital software.
+              </li>
+              <li>Built and maintained stored procedures and triggers.</li>
+              <li>Implemented database logic to improve system reliability.</li>
+              <li>
+                Improved database performance and overall system responsiveness.
+              </li>
+              <li>
+                Supported development of WinForms-based clinical and operational
+                workflows.
+              </li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <div class="subsection-title">Technologies:</div>
+            <ul class="tech-list">
+              <li>WinForms</li>
+              <li>HIS Software</li>
+              <li>SQL query optimization</li>
+              <li>SQL transactions</li>
+              <li>Stored procedures</li>
+              <li>Triggers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product & domain context (no public project names — NDA) -->
+      <section>
+        <div class="section-header">Product &amp; domain context</div>
+        <p style="font-size: 12px; margin: 0; line-height: 1.5">
+          Exposure across employers (implementation details under NDA):
+          enterprise SaaS and B2B management software; high-traffic retail and
+          digital commerce backends; logistics and operations systems;
+          financial-services web applications with strict data and release
+          discipline.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <div class="section-header">Education</div>
+        <div class="education-item">
+          <div class="education-header">
+            Posts and Telecommunications Institute of Technology
+          </div>
+          <div class="education-details">
+            Information Systems · Jan 2013 – Feb 2018
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section>
+        <div class="section-header">Languages</div>
+        <div class="language-item">
+          <span class="language-name">Vietnamese:</span>
+          <span class="language-level">Native</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">English:</span>
+          <span class="language-level"
+            >Basic working proficiency (team communication)</span
+          >
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Export single-page or multi-page A4 PDF from the CV container (html2canvas + jsPDF).
+      async function exportToPDF() {
+        const loading = document.getElementById("loading");
+        const container = document.querySelector(".container");
+
+        try {
+          loading.style.display = "block";
+
+          // Ẩn các nút trước khi capture
+          const buttons = document.querySelectorAll(".button-group, .loading");
+          buttons.forEach((btn) => (btn.style.display = "none"));
+
+          const canvas = await html2canvas(container, {
+            scale: 2.0,
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: "#ffffff",
+            width: container.scrollWidth,
+            height: container.scrollHeight,
+            scrollX: 0,
+            scrollY: 0,
+            logging: false,
+            imageTimeout: 0,
+            removeContainer: true,
+          });
+
+          const { jsPDF } = window.jspdf;
+          const pdf = new jsPDF("p", "mm", "a4");
+
+          const pageWidth = 210;
+          const pageHeight = 297;
+          const margin = 12;
+          const contentWidth = pageWidth - margin * 2;
+          const contentHeight = pageHeight - margin * 2;
+
+          const imgWidth = contentWidth;
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+          const imgData = canvas.toDataURL("image/jpeg", 0.95);
+
+          // Nếu CV vừa trong 1 trang
+          if (imgHeight <= contentHeight) {
+            pdf.addImage(imgData, "JPEG", margin, margin, imgWidth, imgHeight);
+          } else {
+            // Chia thành nhiều trang
+            let yPosition = 0;
+            let pageNumber = 1;
+
+            while (yPosition < imgHeight) {
+              if (pageNumber > 1) {
+                pdf.addPage();
+              }
+
+              // Tính toán vị trí cắt
+              const sourceY = (yPosition / imgHeight) * canvas.height;
+              const sourceHeight = Math.min(
+                (contentHeight / imgHeight) * canvas.height,
+                canvas.height - sourceY,
+              );
+
+              // Tạo canvas tạm cho trang hiện tại
+              const tempCanvas = document.createElement("canvas");
+              const tempCtx = tempCanvas.getContext("2d");
+              tempCanvas.width = canvas.width;
+              tempCanvas.height = sourceHeight;
+
+              // Vẽ phần cần thiết lên canvas tạm
+              tempCtx.drawImage(
+                canvas,
+                0,
+                sourceY,
+                canvas.width,
+                sourceHeight,
+                0,
+                0,
+                canvas.width,
+                sourceHeight,
+              );
+
+              // Chuyển đổi thành image
+              const pageImgData = tempCanvas.toDataURL("image/jpeg", 0.95);
+              const pageImgHeight = (sourceHeight * imgWidth) / canvas.width;
+
+              // Thêm vào PDF
+              pdf.addImage(
+                pageImgData,
+                "JPEG",
+                margin,
+                margin,
+                imgWidth,
+                pageImgHeight,
+              );
+
+              yPosition += contentHeight;
+              pageNumber++;
+            }
+          }
+
+          const fileName =
+            "CV_Nguyen_Phuoc_" + new Date().toISOString().slice(0, 10) + ".pdf";
+          pdf.save(fileName);
+        } catch (error) {
+          console.error("PDF export failed:", error);
+          alert(
+            "PDF export failed. Try Print → Save as PDF, or check the browser console.",
+          );
+        } finally {
+          loading.style.display = "none";
+          // Hiện lại các nút
+          const buttons = document.querySelectorAll(".button-group");
+          buttons.forEach((btn) => (btn.style.display = "flex"));
+        }
+      }
+    </script>
+  </body>
+</html>
